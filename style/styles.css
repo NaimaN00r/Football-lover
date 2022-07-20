@@ -1,0 +1,183 @@
+.header-start{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+.whole-header{
+    display: flex;
+    background-color: black;
+    padding-top: 15px;
+    
+    border-radius: 20px;
+
+}
+.head-info{
+    padding-left: 45px;
+    padding-top: 20px;
+    word-wrap: break-word;
+
+}
+.div-img{
+padding-right: 20px;
+}
+h1{
+    color:lightgray;
+    font-size: 3em;
+}
+p{
+    color: white;
+}
+.button-info{
+    background-color: red;
+    height: 35px;
+    width: 120px;
+    border-radius: 8px;
+    color: aliceblue;
+}
+.live{
+    color: white;
+    
+   
+}
+.fa-greater-than{
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+.artical-section{
+    padding-left: 85px;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+.div-list{
+    width: 180px;
+    height: 200px;
+    border-radius:5px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 35px;
+
+}
+button{
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+    padding-left: 20px;
+}
+.blog{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.blog .blog-banner img{
+    padding-bottom: 20px;
+    height: 200px; 
+    width: 320px;
+}
+.blog-info{
+    height: 200px; 
+    width: 280px;
+    padding-left: 20px;
+
+}
+
+.icons-info{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+
+.whole-footer{
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+.goal-text{
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    padding-left: 45%;
+    font-size: 2.5em;
+
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .flag{
+    padding-top: 20px;
+    display: flex;
+} */
+
+.match-flag{
+    padding-top: 20px;
+    padding-left: 35px;
+    display: flex;
+}
+.vs{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:20px;
+    grid-row-gap:20px;
+    padding-left: 20px;
+}
+.match{
+    height: 200px;
+    width: 300px;
+    border:1px solid lightgray;
+    border-radius: 10px;
+    /* padding-left: 20px; */
+    
+}
+.match-info{
+    color:black;
+    padding-left: 40px;
+   
+}
+
+@media only screen  and (min-width:481px) and (max-width:768px){
+    .header-start{
+        width: 100%;
+    }
+    .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .artical-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-list{
+        padding-bottom: 50px;
+        width: 0;
+        height: 0;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    
+    
+    }
+    .footer-section{
+        display:flexbox;
+    }
+    }
+
