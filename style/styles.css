@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@300&family=Poppins:ital,wght@0,500;1,500&family=Shadows+Into+Light&family=Yellowtail&display=swap');
+body{
+    margin: 0;
+}
+
+.header-start:hover{
+    margin: 15px 15px;
+  }
+
 .header-start{
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 85px;
     padding-right: 85px;
+    transition: margin 3s;
 }
 .whole-header{
     display: flex;
@@ -52,10 +62,10 @@ p{
 }
 
 .div-list{
+    background-color: black;
     width: 180px;
     height: 200px;
     border-radius:5px;
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -102,7 +112,7 @@ button{
     background-color: black;
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 .goal-text{
     color: white;
@@ -161,6 +171,9 @@ button{
     .blogs{
         grid-template-columns: repeat(2,1fr);
     }
+    .matches{
+        grid-template-columns: repeat(2,1fr);
+    }
     .artical-section{
         display: flex;
         flex-direction: column;
@@ -176,8 +189,65 @@ button{
     
     
     }
-    .footer-section{
-        display:flexbox;
+    .whole-footer{
+       width: 100%;
     }
     }
+
+    @media only screen  and (min-width:0) and (max-width:481px){
+        .header-start{
+            width: 100%;
+        }
+        .whole-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .head-info{
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        .matches{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .blogs{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .artical-section{
+            display: flex;
+            flex-direction: column;
+        }
+        .div-list{
+            padding-bottom: 120px;
+            padding-left: 110px;
+            padding-top: 30px;
+            width: 0;
+            height: 0;
+            display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        background-color: white;
+        
+        
+        }
+        .whole-footer{
+           width: 100%;
+
+        }
+        .footer-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .goal-text{
+            color: white;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 45%;
+            font-size: 2.5em;
+        
+        }
+        }
 
